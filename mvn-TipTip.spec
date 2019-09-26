@@ -4,7 +4,7 @@
 #
 Name     : mvn-TipTip
 Version  : master
-Release  : 2
+Release  : 3
 URL      : https://github.com/drewwilson/TipTip/archive/master.tar.gz
 Source0  : https://github.com/drewwilson/TipTip/archive/master.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/com/drewwilson/code/jquery.tipTip/1.3/jquery.tipTip-1.3-minified.js
@@ -38,7 +38,7 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/drewwilson/code/jqu
 
 ## install_append content
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/drewwilson/code/jquery.tipTip/1.3
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/drewwilson/code/jquery.tipTip/1.3/jquery.tipTip-1.3.js
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/drewwilson/code/jquery.tipTip/1.3/jquery.tipTip-1.3-minified.js
 ## install_append end
 
 %files
@@ -46,5 +46,5 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/drewwilson/code/jqu
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/com/drewwilson/code/jquery.tipTip/1.3/jquery.tipTip-1.3.js
+/usr/share/java/.m2/repository/com/drewwilson/code/jquery.tipTip/1.3/jquery.tipTip-1.3-minified.js
 /usr/share/java/.m2/repository/com/drewwilson/code/jquery.tipTip/1.3/jquery.tipTip-1.3.pom
